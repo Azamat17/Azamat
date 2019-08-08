@@ -31,6 +31,7 @@ public class Wikipedia_Steps {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = word + " - Wikipedia";
         Assert.assertTrue("Wiki title is not matching" , actualTitle.equalsIgnoreCase(expectedTitle));
+        Assert.fail();
 
     }
     @Then("User sees {string} is in the main header")
