@@ -9,3 +9,5 @@ Feature: Amazon verification
   @amazon2
   Scenario: Amazon search verification
     When User is on Amazon application
+
+

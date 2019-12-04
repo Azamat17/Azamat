@@ -20,7 +20,7 @@ public class Hooks {
     }
     @After
     public void tearDown(Scenario scenario){
-        System.out.println("Hooks clean up");
+        //System.out.println("Hooks clean up");
         System.out.println(scenario.getName());
         System.out.println(scenario.getStatus());
 
@@ -31,3 +31,7 @@ public class Hooks {
         Driver.quitDriver();
     }
 }
+
+
+
+// but what is the reason of getting the picture of the passed one

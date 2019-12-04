@@ -1,5 +1,6 @@
 package utilities;
 
+import io.appium.java_client.android.AndroidDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +15,10 @@ public class Driver {
     public static WebDriver getDriver(){
         if (driver == null){
             switch (Config.getProperty("browser")){
+                case "androidApp":
+                case "androidWeb":
+                    driver = new AndroidApp().getAndroidDriver();
+                    break;
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();

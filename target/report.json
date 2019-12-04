@@ -1,0 +1,313 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login to Google",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3897053998,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Google page",
+            "match": {
+              "location": "Google_Steps.user_is_on_Google_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 789842,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Google Title verification",
+        "description": "",
+        "id": "google-title-verification;google-title-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 91519013,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2476042360,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User searches for apples",
+            "match": {
+              "location": "Google_Steps.user_searches_for_apples()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9071371,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should see apples inside of the title",
+            "match": {
+              "location": "Google_Steps.user_should_see_apples_inside_of_the_title()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@back"
+          },
+          {
+            "name": "@googleTitle"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Login to Google",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2365467340,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Google page",
+            "match": {
+              "location": "Google_Steps.user_is_on_Google_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 145467,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Google title verification with preferred data",
+        "description": "",
+        "id": "google-title-verification;google-title-verification-with-preferred-data",
+        "after": [
+          {
+            "result": {
+              "duration": 89882671,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1760342181,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User searches for a word \"iphone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Google_Steps.user_searches_for_a_word(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8863964,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see a word \"iphone\" inside of the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 23
+                }
+              ],
+              "location": "Google_Steps.user_should_see_a_word_inside_of_the_title(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@back"
+          },
+          {
+            "name": "@new"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Login to Google",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2277892673,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Google page",
+            "match": {
+              "location": "Google_Steps.user_is_on_Google_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 100180,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Google Title Test",
+        "description": "",
+        "id": "google-title-verification;google-title-test",
+        "after": [
+          {
+            "result": {
+              "duration": 84500941,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 212553,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User tests with words \"apple\" \"pen\" \"paper\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"pen\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"paper\"",
+                  "offset": 36
+                }
+              ],
+              "location": "Google_Steps.user_tests_with_words(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151260,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User checks numbers 12 and 55",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 20
+                },
+                {
+                  "val": "55",
+                  "offset": 27
+                }
+              ],
+              "location": "Google_Steps.user_checks_numbers_and(Integer,Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@back"
+          },
+          {
+            "name": "@dataType"
+          }
+        ]
+      }
+    ],
+    "name": "Google Title verification",
+    "description": "",
+    "id": "google-title-verification",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/google.feature",
+    "tags": [
+      {
+        "name": "@back",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
